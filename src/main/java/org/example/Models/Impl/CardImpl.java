@@ -4,6 +4,8 @@ import org.example.Enums.Rank;
 import org.example.Enums.Suite;
 import org.example.Models.Card;
 
+import java.util.List;
+
 public class CardImpl implements Card {
 
     Suite suite;
@@ -24,7 +26,7 @@ public class CardImpl implements Card {
 
     @Override
     public String toString() {
-        return  rank + " of " + suite;
+        return rank + " of " + suite;
     }
 
     @Override

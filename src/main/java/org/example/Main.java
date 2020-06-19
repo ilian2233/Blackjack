@@ -4,7 +4,6 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
 import org.example.Models.Game;
 import org.example.Models.Impl.TableImpl;
@@ -20,7 +19,7 @@ public class Main extends Application {
 
     public static Game game;
 
-    public static int getPlayerBankAmount(){
+    public static int getPlayerBankAmount() {
         return table.getPlayerBankAmount();
     }
 

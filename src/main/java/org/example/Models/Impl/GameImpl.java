@@ -1,5 +1,7 @@
 package org.example.Models.Impl;
 
+import org.example.Enums.Move;
+import org.example.Models.BlackjackBot;
 import org.example.Models.Card;
 import org.example.Models.Game;
 import org.example.Models.Player;
@@ -72,8 +74,7 @@ class GameImpl implements Game {
 
     @Override
     public void dealerPlay() {
-        hitDealer();
-        if (getWinner().isEmpty()) {
+        while ( BlackjackBot.getBestMove(getDealersHand(), getPlayersHand()) == Move.Hit){
             hitDealer();
         }
     }

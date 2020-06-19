@@ -32,6 +32,8 @@ public class TableImpl implements Table {
     }
 
     private void removePreviousCards() {
+        deck.getCards().addAll(dealer.getHand());
+        deck.getCards().addAll(player.getHand());
         player.clearHand();
         dealer.clearHand();
     }
