@@ -3,14 +3,15 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="org.example.GameRoundController">
-   <children>
-      <Button fx:id="standButton" layoutX="14.0" layoutY="319.0" mnemonicParsing="false" onAction="#stand" prefHeight="67.0" prefWidth="143.0" text="Stand" />
-      <Button fx:id="hitButton" layoutX="443.0" layoutY="319.0" mnemonicParsing="false" onAction="#hit" prefHeight="67.0" prefWidth="143.0" text="Hit" />
-      <ListView fx:id="playerCards" layoutX="200.0" layoutY="196.0" prefHeight="190.0" prefWidth="200.0" />
-      <ListView fx:id="dealerCards" layoutX="200.0" layoutY="6.0" prefHeight="190.0" prefWidth="200.0" />
-      <Label fx:id="playerCardsValue" layoutX="400.0" layoutY="192.0" text="Label" />
-      <Label fx:id="dealerCardsValue" layoutX="400.0" layoutY="6.0" text="Label" />
-      <Label fx:id="betAmount" layoutX="14.0" layoutY="22.0" text="Label" />
-   </children>
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1"
+            xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="org.example.GameRoundController">
+    <Button fx:id="standButton" layoutX="14.0" layoutY="319.0" mnemonicParsing="false" onAction="#stand"
+            prefHeight="67.0" prefWidth="143.0" text="Stand"/>
+    <Button fx:id="hitButton" layoutX="443.0" layoutY="319.0" mnemonicParsing="false" onAction="#hit" prefHeight="67.0"
+            prefWidth="143.0" text="Hit"/>
+    <ListView fx:id="playerCards" layoutX="200.0" layoutY="196.0" prefHeight="190.0" prefWidth="200.0"/>
+    <ListView fx:id="dealerCards" layoutX="200.0" layoutY="6.0" prefHeight="190.0" prefWidth="200.0"/>
+    <Label fx:id="playerCardsValue" layoutX="400.0" layoutY="192.0" text="Label"/>
+    <Label fx:id="dealerCardsValue" layoutX="400.0" layoutY="6.0" text="Label"/>
+    <Label fx:id="betAmount" layoutX="14.0" layoutY="22.0" text="Label"/>
 </AnchorPane>

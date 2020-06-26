@@ -10,7 +10,7 @@ import java.io.IOException;
 public class MainPageController {
 
     @FXML
-    private Button submit;
+    public Button submit;
     @FXML
     private Label bankAmount;
     @FXML

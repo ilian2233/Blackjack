@@ -4,8 +4,6 @@ import org.example.Enums.Rank;
 import org.example.Enums.Suite;
 import org.example.Models.Card;
 
-import java.util.List;
-
 public class CardImpl implements Card {
 
     Suite suite;

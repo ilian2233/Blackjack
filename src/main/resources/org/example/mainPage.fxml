@@ -3,11 +3,12 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="246.0" prefWidth="309.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.MainPageController">
-   <children>
-      <Button fx:id="submit" layoutX="109.0" layoutY="219.0" mnemonicParsing="false" onAction="#startRound" text="Start round" />
-      <Label fx:id="bankAmount" layoutX="60.0" layoutY="47.0" prefHeight="35.0" prefWidth="111.0" text="Label" />
-      <Slider fx:id="betAmountSlider" layoutX="28.0" layoutY="141.0" prefHeight="14.0" prefWidth="200.0" onMouseClicked="#calculateBet"/>
-      <Label fx:id="betAmountLabel" layoutX="230.0" layoutY="141.0" prefHeight="16.0" prefWidth="56.0" text="Label" />
-   </children>
+<AnchorPane prefHeight="246.0" prefWidth="309.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.MainPageController">
+    <Button fx:id="submit" layoutX="109.0" layoutY="219.0" mnemonicParsing="false" onAction="#startRound"
+            text="Start round"/>
+    <Label fx:id="bankAmount" layoutX="60.0" layoutY="47.0" prefHeight="35.0" prefWidth="111.0" text="Label"/>
+    <Slider fx:id="betAmountSlider" layoutX="28.0" layoutY="141.0" prefHeight="14.0" prefWidth="200.0"
+            onMouseClicked="#calculateBet"/>
+    <Label fx:id="betAmountLabel" layoutX="230.0" layoutY="141.0" prefHeight="16.0" prefWidth="56.0" text="Label"/>
 </AnchorPane>

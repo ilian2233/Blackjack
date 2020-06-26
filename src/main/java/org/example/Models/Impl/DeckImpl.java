@@ -11,7 +11,7 @@ import java.util.List;
 
 public class DeckImpl implements Deck {
 
-    private List<Card> cards = new ArrayList<>();
+    private final List<Card> cards = new ArrayList<>();
 
     public DeckImpl() {
         for (Suite i : Suite.values()) {
@@ -30,10 +30,6 @@ public class DeckImpl implements Deck {
         Card card = cards.get(0);
         cards.remove(card);
         return card;
-    }
-
-    private void setCards(List<Card> cards) {
-        this.cards = cards;
     }
 
     public void shuffleDeck() {
