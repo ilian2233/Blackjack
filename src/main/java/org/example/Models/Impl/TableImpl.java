@@ -20,9 +20,8 @@ public class TableImpl implements Table {
         return this;
     }
 
-    public TableImpl setDeck(Deck deck) {
-        this.deck = deck;
-        return this;
+    public void setNumberOfDecks(int numberOfDecks){
+        deck = new DeckImpl(numberOfDecks);
     }
 
     private void giveStarterCarts() {

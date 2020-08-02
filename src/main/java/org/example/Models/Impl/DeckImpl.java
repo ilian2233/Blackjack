@@ -21,6 +21,16 @@ public class DeckImpl implements Deck {
         }
     }
 
+    public DeckImpl(int numberOfStandardSetsOfCards) {
+        for (int a = 0; a < numberOfStandardSetsOfCards; a++) {
+            for (Suite i : Suite.values()) {
+                for (Rank j : Rank.values()) {
+                    cards.add(new CardImpl(i, j));
+                }
+            }
+        }
+    }
+
     public List<Card> getCards() {
         return cards;
     }
